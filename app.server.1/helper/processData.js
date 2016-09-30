@@ -23,9 +23,9 @@ module.exports = exports = (function(){
         //emitting line
         callback(null,_data[getLine()]);
 
-        //line added to keep emitting.
-        if(_lineNumber===8)
-            _lineNumber=0;
+        //line added to keep emitting for development purpose.
+        // if(_lineNumber===8)
+        //     _lineNumber=0;
     }
     
     
