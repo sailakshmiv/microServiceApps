@@ -1,5 +1,7 @@
 # MicroServices Architecture APP
+
 This repo has 4 apps. Below is the flow:
+
 1. **app.server.1** it parses the data from a data.txt file and emits the data line by line on a particular port(8082)
 2. **app.server.2** it recieves the emitted data by connectind to the emitting port, processes the data and inserts in remote mongoDB database.
 3. **api.server.3** it is simply an API server for client applications. It exposes the api's to access the data from the mongoDB database.
