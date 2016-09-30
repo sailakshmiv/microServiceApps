@@ -1,0 +1,37 @@
+<div>
+    <div>
+        <h2>Instrument Lists</h2>
+        <ul>
+            <li ng-repeat="obj in ctrl.data">
+                {{obj.instrument}}                        
+            </li>
+        </ul>
+    </div>
+    <div>
+        <div ng-show="ctrl.alert">
+            {{ctrl.alert}}
+        </div>
+        <div ng-show="ctrl.searchData">
+            <h2>Position of {{ctrl.searchData}}: {{ctrl.position}}</h2>                    
+        </div>
+        <div ng-show="ctrl.showAll">
+            <h2>All Instrument Data</h2>
+            <table>
+                <thead>
+                    <td>Instruments</td>
+                    <td>Position</td>
+                </thead>
+                <tr ng-repeat="obj in ctrl.data">
+                    <td>{{obj.instrument}}</td>
+                    <td>{{obj.position}}</td>
+                </tr>                        
+            </table>
+    </div>
+    </div>
+    <input type="text" ng-model="ctrl.search">
+    <button ng-click="ctrl.searchClick()">Search</button>
+    <button ng-click="ctrl.displayAll()">
+        <span ng-show="!ctrl.showAll">ShowAll</span>
+        <span ng-show="ctrl.showAll">HideAll</span>                
+    </button>            
+</div>
