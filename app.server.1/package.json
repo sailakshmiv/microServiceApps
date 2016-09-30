@@ -1,0 +1,16 @@
+{
+  "name": "project51",
+  "version": "1.0.0",
+  "description": "data process, publish and consume app",
+  "main": "app.js",
+  "scripts": {
+    "debug":"./node_modules/.bin/DEBUG='main:*' node app.js",
+    "start":"node app.js"
+  },
+  "author": "nivesh2",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "socket.io": "^1.4.8"
+  }
+}
